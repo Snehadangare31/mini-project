@@ -1,0 +1,412 @@
+:root {
+    --primary-color: #1a4f8b;
+    --secondary-color: #f0f4f8;
+    --accent-color: #e63946;
+    --text-color: #333;
+    --light-gray: #f8f9fa;
+    --dark-gray: #343a40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Apply the background image over the entire page */
+.page-background {
+    background-image: url('https://files.yappe.in/place/full/shree-shivtirth-ichalkaranji-8855565.webp');  /* Replace with your image path */
+    background-size: cover;  /* Ensure the image covers the entire page */
+    background-position: center;  /* Center the background image */
+    background-repeat: no-repeat;  /* Prevent the image from repeating */
+    height: 100vh;  /* Set height to full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Align the content to the top */
+    padding: 0;
+    color: white;
+}
+
+/* Bus Routes Section */
+.routes {
+    background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent overlay for readability */
+    padding: 50px;
+    text-align: center;
+    flex: 1;
+}
+
+#routes-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.route-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;  /* Ensure routes wrap if there's not enough space */
+}
+
+.route {
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background for route items */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.route h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.route p {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.top-bar {
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 0;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info span {
+    margin-right: 20px;
+    font-size: 0.9rem;
+}
+
+.language-switch button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+header {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.logo-text h1 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.logo-text p {
+    color: var(--dark-gray);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+
+/* Hero Section */
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZta51op6tDF10Rlk4gM7t4ey124QmOnlRGYKXa_1zQ4Mg_UrK7-pI-xOqn6XuQxZ1l-g&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.search-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-box h2 {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Quick Links */
+
+.quick-links {
+    padding: 60px 0;
+    background: var(--light-gray);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+
+/* News Section */
+
+.news {
+    padding: 40px 0;
+}
+
+.news h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.news-ticker {
+    background: var(--light-gray);
+    padding: 15px;
+    border-radius: 4px;
+}
+
+
+/* Footer */
+
+footer {
+    background: var(--dark-gray);
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.app-links {
+    display: flex;
+    gap: 15px;
+}
+
+.app-links img {
+    height: 40px;
+}
+
+:root {
+    --primary-color: #1a4f8b;
+    --secondary-color: #f0f4f8;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+section {
+    min-height: 100vh;
+    padding: 80px 0;
+    scroll-margin-top: 80px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .form-group {
+        flex-direction: column;
+    }
+    .top-bar .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Modal base styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px 40px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #0056b3;
+}
+
+#toggleForm {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#formMessage {
+    color: red;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  @keyframes scrollTicker {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-scrollTicker {
+    animation: scrollTicker 20s linear infinite;
+  }
+  
